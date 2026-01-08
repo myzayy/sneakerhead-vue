@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "title": "1460 Smooth Leather Boots",
+    "price": 170,
+    "image": "/images/item-1.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Jadon Platform Boots",
+    "price": 210,
+    "image": "/images/item-2.jpg"
+  },
+  {
+    "id": 3,
+    "title": "1461 Oxford Shoes",
+    "price": 140,
+    "image": "/images/item-3.jpg"
+  },
+  {
+    "id": 4,
+    "title": "Adrian Tassel Loafers",
+    "price": 99999,
+    "image": "/images/item-4.jpg"
+  }
+]

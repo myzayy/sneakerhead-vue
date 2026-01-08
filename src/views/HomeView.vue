@@ -9,10 +9,10 @@
 				   			<div class="col-sm-6 offset-sm-3 text-center slider-text">
 				   				<div class="slider-text-inner">
 				   					<div class="desc">
-					   					<h1 class="head-1">Men's</h1>
-					   					<h2 class="head-2">Shoes</h2>
+					   					<h1 class="head-1">Legendary</h1>
+					   					<h2 class="head-2">Dr. Martens</h2>
 					   					<h2 class="head-3">Collection</h2>
-					   					<p class="category"><span>New trending shoes</span></p>
+					   					<p class="category"><span>Since 1947</span></p>
 					   					<p><a href="#" class="btn btn-primary">Shop Collection</a></p>
 				   					</div>
 				   				</div>
@@ -27,18 +27,18 @@
 				   			<div class="col-sm-6 offset-sm-3 text-center slider-text">
 				   				<div class="slider-text-inner">
 				   					<div class="desc">
-					   					<h1 class="head-1">Huge</h1>
-					   					<h2 class="head-2">Sale</h2>
-					   					<h2 class="head-3"><strong class="font-weight-bold">50%</strong> Off</h2>
-					   					<p class="category"><span>Big sale sandals</span></p>
-					   					<p><a href="#" class="btn btn-primary">Shop Collection</a></p>
+					   					<h1 class="head-1">Rebel</h1>
+					   					<h2 class="head-2">Soles</h2>
+										<h2 class="head-3">Sale</h2>
+					   					<p class="category"><span>New Arrivals</span></p>
+					   					<p><a href="#" class="btn btn-primary">Shop All</a></p>
 				   					</div>
 				   				</div>
 				   			</div>
 				   		</div>
 			   		</div>
 			   	</li>
-			   	<li style="background-image: url(images/img_bg_3.jpg);">
+			   	<!-- <li style="background-image: url(images/img_bg_3.jpg);">
 			   		<div class="overlay"></div>
 			   		<div class="container-fluid">
 			   			<div class="row">
@@ -55,28 +55,59 @@
 				   			</div>
 				   		</div>
 			   		</div>
-			   	</li>
+			   	</li> -->
 			  	</ul>
 		  	</div>
 		</aside>
+	<div class="colorlib-product">
+    	<div class="container">
+      		<div class="row">
+        		<div class="col-sm-8 offset-sm-2 text-center colorlib-heading">
+          			<h2>Best Sellers</h2>
+       			</div>
+      		</div>
+      
+      		<div class="row row-pb-md">
+        		<ProductCard v-for="product in products"
+				:key="product.id"
+				:title="product.title"
+				:price="product.price"
+				:image="product.image">
+
+				</ProductCard>
+      		</div>
+		</div>
+	</div>
+
 </template>
 
 <script>
-  export default {
-    name: 'HomeView',
-    mounted() {
-      // code from main.js
-      if (window.jQuery && window.jQuery().flexslider) {
-      window.jQuery('.flexslider').flexslider({
-        animation: "fade",
-        slideshowSpeed: 5000,
-        animationSpeed: 600,
-        controlNav: true,
-        directionNav: true,
-        pauseOnHover: true
-      });
+	import ProductCard from '@/components/ProductCard.vue';
+	import productsData from '../products.json';
+
+  	export default {
+    	name: 'HomeView',
+		components: {
+			ProductCard
+		},
+		data() {
+			return {
+				products:  productsData,
+			}
+		},
+    	mounted() {
+      	// code from main.js
+      		if (window.jQuery && window.jQuery().flexslider) {
+      			window.jQuery('.flexslider').flexslider({
+        			animation: "fade",
+        			slideshowSpeed: 5000,
+        			animationSpeed: 600,
+        			controlNav: true,
+        			directionNav: true,
+        			pauseOnHover: true
+      			});
+    		}
+    	}
     }
-    }
-  }
 
 </script>
