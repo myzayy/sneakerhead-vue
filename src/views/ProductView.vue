@@ -1,7 +1,12 @@
 <template>
     <div class="colorlib-product">
         <div class="container">
-            <div class="row row-pb-lg product-detail-wrap" v-if="product">
+            <div v-if="loading" class="row">
+                <div class="col-sm-12 text-center">
+                    <h3>Loading...</h3>
+                </div>
+            </div>
+            <div class="row row-pb-lg product-detail-wrap" v-else-if="product">
                 <div class="col-sm-8">
                     <div class="product-entry border">
                         <a href="#" class="prod-img">
@@ -37,15 +42,24 @@
         name: 'ProductView',
         data() {
             return {
-                product: null
+                product: null,
+                loading: true
             }
         },
         mounted() {
-            // take id from link-addres
-            const id = this.$route.params.id;
+            
+            setTimeout(() => {
+                // take id from link-addres
+                const id = this.$route.params.id;
 
-            // seek product from json by id
-            this.product = products.find(p => p.id == id);
+                // seek product from json by id
+                this.product = products.find(p => p.id == id);
+
+                this.loading = false;
+            },  500);
+            
+
+            
         }
     }
 </script>
