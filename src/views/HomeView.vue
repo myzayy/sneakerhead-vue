@@ -70,6 +70,7 @@
       		<div class="row row-pb-md">
         		<ProductCard v-for="product in products"
 				:key="product.id"
+				:id="product.id"
 				:title="product.title"
 				:price="product.price"
 				:image="product.image">
