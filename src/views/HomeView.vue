@@ -82,6 +82,7 @@
 </template>
 
 <script>
+
 	import ProductCard from '@/components/ProductCard.vue';
 	import productsData from '../products.json';
 
