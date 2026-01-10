@@ -29,7 +29,7 @@
                             <li><a href="#">Contact</a></li>
                             <li class="cart">
                                 <Router-link to="/cart">
-                                    <i class="icon-shopping_cart">Cart</i>
+                                    <i class="icon-shopping_cart">Cart [{{ cartStore.items.length }}]</i>
                                 </Router-link>
                             </li>
                         </ul>
@@ -59,7 +59,13 @@
 </template>
 
 <script>
+    import { mapStores } from 'pinia';
+    import { useCartStore } from '@/stores/cartStore';
+
     export default {
-        name: 'TheNavbar'
+        name: 'TheNavbar',
+        computed: {
+            ...mapStores(useCartStore)
+        }
     }
 </script>
