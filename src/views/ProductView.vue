@@ -21,9 +21,9 @@
                         <p class="price"><span>${{ product.price }}</span></p>
                         <p>Item description</p>
                         <p>
-                        <a href="#" class="btn btn-primary btn-addtocart">
+                        <button @click="AddToCard" class="btn btn-primary btn-addtocart">
                             <i class="icon-shopping-cart"></i> Add to Cart
-                        </a>
+                        </button>
                         </p>
                     </div>
                 </div>
@@ -37,7 +37,10 @@
 </template>
 
 <script>
-    import products from '../products.json'
+    import products from '../products.json';
+    import { useCartStore } from '@/stores/cartStore';
+    import { mapStores } from 'pinia';
+
     export default {
         name: 'ProductView',
         data() {
@@ -46,6 +49,13 @@
                 loading: true
             }
         },
+        
+        computed: {
+            // connect shop to component
+            // ... unpack 
+            ...mapStores(useCartStore)
+        },
+
         mounted() {
             
             setTimeout(() => {
@@ -60,6 +70,14 @@
             
 
             
+        },
+        
+        methods: {
+            AddToCard() {
+                this.cartStore.addToCart(this.product);
+
+                alert("Item added to cart!")
+            }
         }
     }
 </script>
