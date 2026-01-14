@@ -21,7 +21,7 @@
                         <p class="price"><span>${{ product.price }}</span></p>
                         <p>Item description</p>
                         <p>
-                        <button @click="AddToCard" class="btn btn-primary btn-addtocart">
+                        <button @click="AddToCart" class="btn btn-primary btn-addtocart">
                             <i class="icon-shopping-cart"></i> Add to Cart
                         </button>
                         </p>
@@ -73,7 +73,7 @@
         },
         
         methods: {
-            AddToCard() {
+            AddToCart() {
                 this.cartStore.addToCart(this.product);
 
                 alert("Item added to cart!")
