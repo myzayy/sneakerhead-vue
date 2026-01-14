@@ -14,9 +14,10 @@ export const useCartStore = defineStore('cart', {
             console.log("Item was added to Pinia: ", product.title);
         },
 
-       // clearCart() {
-        //    this.items = [];
-       // },
+        clearCart() {
+            this.items = [];
+            this.saveToLocalStorage();
+        },
 
         removeFromCart(index) {
             this.items.splice(index, 1);

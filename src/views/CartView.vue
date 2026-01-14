@@ -75,15 +75,19 @@
                     <div class="col-md-12">
                         <div class="total-wrap">
                             <div class="row">
-                                <div class="col-sm-8"></div>
-                                <div class="col-sm-4 text-center">
-                                    <div class="total">
+                                <div class="col-sm-2"></div>
+        
+                                <div class="col-sm-12 text-center">
+                                    <div class="total" >
                                         <div class="sub">
-                                        </div>
+                                            </div>
                                         <div class="grand-total">
-                                            <p><span><strong>Total:</strong></span> <span>{{ totalPrice }}</span></p>
-                                            
-                                        </div>                                         
+                                            <p><span><strong>Total:</strong></span> <span>${{ totalPrice }}</span></p>
+                                        </div>
+                
+                                        <div class="grand-total text-center">
+                                            <RouterLink to="/checkout" class="btn btn-primary">Proceed to Checkout</RouterLink>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
