@@ -10,6 +10,11 @@
                     <RouterLink :to="'/product/' + id">{{ title }}</RouterLink>
                 </h2>
                 <span class="price">{{ price }}</span>
+                <div class="mt-2">
+                    <button class="btn btn-primary btn-sm" @click="addToCartClick">
+                        <i class="icon-shopping_cart"></i> Add To Cart
+                    </button>
+                </div>
 			</div>
 		</div>
 	</div>
@@ -22,7 +27,7 @@
         // props - data which given to component outside
         props: {
             id: {
-                Type: Number,
+                type: Number,
                 required: true
             },
             image: {
@@ -38,7 +43,16 @@
                 type: Number,
                 required: true
             },
+            productObj: {
+                type: Object,
+                required: true
+            },
             
+        },
+        methods: {
+            addToCartClick() {
+                this.$emit('add-to-cart', this.productObj);
+            }
         }
     }
 </script>
