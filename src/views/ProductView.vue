@@ -34,6 +34,17 @@
             </div>
         </div>
     </div>
+
+    <div class="container" v-if="product">
+        <div class="row">
+            <div class="col-sm-8 offset-sm-2">
+                <ProductReviews :reviews="product.reviews"></ProductReviews>
+            </div>
+        </div>
+        <!-- <ProductReviews :reviews="product.reviews"></ProductReviews> -->
+        
+    </div>
+
     <div class="colorlib-product">
     	<div class="container">
       		<div class="row">
@@ -66,12 +77,14 @@
     import { useCartStore } from '@/stores/cartStore';
     import { mapStores } from 'pinia';
     import ProductCard from '@/components/ProductCard.vue';
+    import ProductReviews from '@/components/ProductReviews.vue';
 
     export default {
         name: 'ProductView',
         
         components: {
-            ProductCard
+            ProductCard,
+            ProductReviews
         },
         data() {
             return {
