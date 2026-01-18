@@ -5,7 +5,7 @@
                 <div class="row">
                     <div class="col-sm-7 col-md-9">
                         <div id="colorlib-logo">
-                            <Routerlink to="/">The Doc Shop</Routerlink>
+                            <RouterLink to="/">The Doc Shop</RouterLink>
                         </div>
                     </div>
                     <div class="col-sm-5 col-md-3">
@@ -28,9 +28,9 @@
                             <li><a href="#">About</a></li>
                             <li><a href="#">Contact</a></li>
                             <li class="cart">
-                                <Router-link to="/cart">
+                                <RouterLink to="/cart">
                                     <i class="icon-shopping_cart">Cart [{{ cartStore.items.length }}]</i>
-                                </Router-link>
+                                </RouterLink>
                             </li>
                         </ul>
                     </div>
@@ -42,15 +42,21 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm-8 offset-sm-2 text-center">
-                        <div class="row">
-                            <div class="owl-carousel2">
-                                <div class="item">
-                                    <div class="col">
-                                        <h3> <a href="#">Free Shipping on all orders over 100 euro!</a></h3>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        <swiper
+                        :modules="modules"
+                        :slides-per-view="1"
+                        :loop="true"
+                        :autoplay="{ delay: 3000, disableOnInteraction: false }"
+                        class="my-swiper"
+                        >
+                            <swiper-slide>
+                                <h3><a href="#">Free Shipping on all orders over 100 euro!</a></h3>
+                            </swiper-slide>
+              
+                            <swiper-slide>
+                                <h3><a href="#">Summer Sale is ON! 50% OFF</a></h3>
+                            </swiper-slide>
+                        </swiper>
                     </div>
                 </div>
             </div>
@@ -59,11 +65,23 @@
 </template>
 
 <script>
+    import 'swiper/css';
+    import 'swiper/css/effect-fade';
     import { mapStores } from 'pinia';
     import { useCartStore } from '@/stores/cartStore';
+    import { Swiper, SwiperSlide } from 'swiper/vue'
+    import { Autoplay, EffectFade } from 'swiper/modules';
 
     export default {
         name: 'TheNavbar',
+        components: {
+            Swiper, SwiperSlide
+        },
+        data() {
+            return {
+                modules: [Autoplay, EffectFade]
+            }
+        },
         computed: {
             ...mapStores(useCartStore)
         }

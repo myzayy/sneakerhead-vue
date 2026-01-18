@@ -1,64 +1,5 @@
 <template>
-  <aside id="colorlib-hero">
-			<div class="flexslider">
-				<ul class="slides">
-			   	<li style="background-image: url(images/img_bg_1.jpg);">
-			   		<div class="overlay"></div>
-			   		<div class="container-fluid">
-			   			<div class="row">
-				   			<div class="col-sm-6 offset-sm-3 text-center slider-text">
-				   				<div class="slider-text-inner">
-				   					<div class="desc">
-					   					<h1 class="head-1">Legendary</h1>
-					   					<h2 class="head-2">Dr. Martens</h2>
-					   					<h2 class="head-3">Collection</h2>
-					   					<p class="category"><span>Since 1947</span></p>
-					   					<p><a href="#" class="btn btn-primary">Shop Collection</a></p>
-				   					</div>
-				   				</div>
-				   			</div>
-				   		</div>
-			   		</div>
-			   	</li>
-			   	<li style="background-image: url(images/img_bg_2.jpg);">
-			   		<div class="overlay"></div>
-			   		<div class="container-fluid">
-			   			<div class="row">
-				   			<div class="col-sm-6 offset-sm-3 text-center slider-text">
-				   				<div class="slider-text-inner">
-				   					<div class="desc">
-					   					<h1 class="head-1">Rebel</h1>
-					   					<h2 class="head-2">Soles</h2>
-										<h2 class="head-3">Sale</h2>
-					   					<p class="category"><span>New Arrivals</span></p>
-					   					<p><a href="#" class="btn btn-primary">Shop All</a></p>
-				   					</div>
-				   				</div>
-				   			</div>
-				   		</div>
-			   		</div>
-			   	</li>
-			   	<!-- <li style="background-image: url(images/img_bg_3.jpg);">
-			   		<div class="overlay"></div>
-			   		<div class="container-fluid">
-			   			<div class="row">
-				   			<div class="col-sm-6 offset-sm-3 text-center slider-text">
-				   				<div class="slider-text-inner">
-				   					<div class="desc">
-					   					<h1 class="head-1">New</h1>
-					   					<h2 class="head-2">Arrival</h2>
-					   					<h2 class="head-3">up to <strong class="font-weight-bold">30%</strong> off</h2>
-					   					<p class="category"><span>New stylish shoes for men</span></p>
-					   					<p><a href="#" class="btn btn-primary">Shop Collection</a></p>
-				   					</div>
-				   				</div>
-				   			</div>
-				   		</div>
-			   		</div>
-			   	</li> -->
-			  	</ul>
-		  	</div>
-		</aside>
+  <HeroSlider />
 	<div class="colorlib-product">
     	<div class="container">
       		<div class="row">
@@ -92,11 +33,13 @@
 	import { useCartStore } from '@/stores/cartStore';
 	import ProductCard from '@/components/ProductCard.vue';
 	import productsData from '../products.json';
+	import HeroSlider from '@/components/HeroSlider.vue';
 
   	export default {
     	name: 'HomeView',
 		components: {
-			ProductCard
+			ProductCard,
+			HeroSlider
 		},
 		data() {
 			return {
@@ -114,22 +57,7 @@
 
 				alert(`${product.title} added to cart!`);
 			}
-		},
-    	mounted() {
-      	// code from main.js
-      		if (window.jQuery && window.jQuery().flexslider) {
-      			window.jQuery('.flexslider').flexslider({
-        			animation: "fade",
-        			slideshowSpeed: 5000,
-        			animationSpeed: 600,
-        			controlNav: true,
-        			directionNav: true,
-        			pauseOnHover: true
-
-					
-      			});
-    		}
-    	}
+		}
     }
 
 </script>
