@@ -22,7 +22,7 @@
                         <p>{{ product.description }}</p>
                         <p>
                         <button @click="AddToCart" class="btn btn-primary btn-addtocart">
-                            <i class="icon-shopping-cart"></i> Add to Cart
+                            Add to Cart
                         </button>
                         </p>
                     </div>

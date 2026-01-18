@@ -88,7 +88,6 @@
     }
 </script>
 <style>
-/* Задаємо висоту слайдера, інакше він буде схлопнутий */
 .hero-swiper {
   width: 100%;
   height: 600px;
@@ -142,6 +141,9 @@
 }
 .swiper-button-next,
 .swiper-button-prev {
-  color: #ffffff !important; 
+  color: #FFDD00 !important; 
+}
+.swiper-pagination-bullet-active {
+    background: #FFDD00;
 }
 </style>

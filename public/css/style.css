@@ -8844,3 +8844,18 @@ input[type="text"] {
 
 .js .animate-box {
   opacity: 0; }
+/* My styles */
+.btn.btn-primary  {
+  background: #FFDD00  !important;
+    border: 2px solid #FFDD00 !important; 
+    color: #000000 !important;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.btn.btn-primary:hover, 
+.btn.btn-primary:focus {
+    background: #1a1a1a !important;
+    color: #FFDD00 !important;
+    border-color: #FFDD00 !important;
+    box-shadow: 0 5px 15px rgba(255, 221, 0, 0.4);
+}
