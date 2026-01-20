@@ -1,6 +1,7 @@
 [
   {
     "id": 1,
+    "category": "men",
     "title": "1460 Smooth Leather Boots",
     "price": 170,
     "image": "/images/item-1.jpg",
@@ -24,6 +25,7 @@
   },
   {
     "id": 2,
+    "category": "men",
     "title": "Jadon Platform Boots",
     "price": 210,
     "image": "/images/item-2.jpg",
@@ -31,6 +33,7 @@
   },
   {
     "id": 3,
+    "category": "men",
     "title": "1461 Oxford Shoes",
     "price": 140,
     "image": "/images/item-3.jpg",
@@ -61,6 +64,7 @@
   },
   {
     "id": 4,
+    "category": "women",
     "title": "Adrian Tassel Loafers",
     "price": 99999,
     "image": "/images/item-4.jpg",
@@ -68,6 +72,7 @@
   },
   {
     "id": 5,
+    "category": "men",
     "title": "1460 Smooth Leather Boots",
     "price": 170,
     "image": "/images/item-5.jpg",
@@ -75,6 +80,7 @@
   },
   {
     "id": 6,
+    "category": "women",
     "title": "Jadon Platform Boots",
     "price": 210,
     "image": "/images/item-6.jpg",
@@ -98,6 +104,7 @@
   },
   {
     "id": 7,
+    "category": "men",
     "title": "1461 Oxford Shoes",
     "price": 140,
     "image": "/images/item-7.jpg",
@@ -105,6 +112,7 @@
   },
   {
     "id": 8,
+    "category": "women",
     "title": "1461 Oxford Shoes",
     "price": 140,
     "image": "/images/item-8.jpg",

@@ -23,9 +23,9 @@
                     <div class="col-sm-12 text-left menu-1">
                         <ul>
                             <li><RouterLink to="/">Home</RouterLink></li>
-                            <li><a href="#">Men</a></li>
-                            <li><a href="#">Women</a></li>
-                            <li><a href="#">About</a></li>
+                            <li><RouterLink to="/category/men">Men</RouterLink></li>
+                            <li><RouterLink to="/category/women">Women</RouterLink></li>
+                            <li><RouterLink to="/about">About</RouterLink></li>
                             <li><a href="#">Contact</a></li>
                             <li class="cart">
                                 <RouterLink to="/cart">
