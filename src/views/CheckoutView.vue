@@ -15,7 +15,7 @@
                                         <label for="country">Select Country</label>
                                         <div class="form-field">
                                             <i class="icon icon-arrow-down3"></i>
-                                            <select name="country" id="country" class="form-control" autocomplete="country">
+                                            <select name="country" id="country" class="form-control" v-model="form.country" autocomplete="country">
                                                 <option value="#">Select country</option>
                                                 <option value="Slovakia">Slovakia</option>
                                                 <option value="Ukraine">Ukraine</option>
@@ -29,33 +29,33 @@
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label for="fname">First Name</label>
-                                        <input type="text" id="fname" name="firstname" class="form-control" placeholder="Your firstname" autocomplete="given-name">
+                                        <input type="text" id="fname" name="firstname" class="form-control" v-model="form.firstname" placeholder="Your firstname" autocomplete="given-name">
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label for="lname">Last Name</label>
-                                        <input type="text" id="lname" name="lastname" class="form-control" placeholder="Your lastname" autocomplete="family-name">
+                                        <input type="text" id="lname" name="lastname" class="form-control" v-model="form.lastname" placeholder="Your lastname" autocomplete="family-name">
                                     </div>
                                 </div>
 
                                 <div class="col-md-12">
                                     <div class="form-group">
                                         <label for="address">Address</label>
-                                        <input type="text" id="address" name="address" class="form-control" placeholder="Enter your address" autocomplete="street-address">
+                                        <input type="text" id="address" name="address" class="form-control" v-model="form.address" placeholder="Enter your address" autocomplete="street-address">
                                     </div>
                                 </div>
 
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label for="email">E-mail Address</label>
-                                        <input type="email" id="email" name="email" class="form-control" placeholder="Your e-mail address" autocomplete="email">
+                                        <input type="email" id="email" name="email" class="form-control" v-model="form.email" placeholder="Your e-mail address" autocomplete="email">
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label for="phone">Phone Number</label>
-                                        <input type="tel" id="phone" name="phone" class="form-control" placeholder="Ex: +421...." autocomplete="tel">
+                                        <input type="tel" id="phone" name="phone" class="form-control" v-model="form.phone" placeholder="Ex: +421...." autocomplete="tel">
                                     </div>
                                 </div>
                             </div>
@@ -135,6 +135,18 @@
             components: {
                 CartProcess
             },
+            data() {
+                return {
+                    form: {
+                        country: "#",
+                        firstname: '',
+                        lastname: '',
+                        address: '',
+                        email: '',
+                        phone: ''
+                    }
+                }
+            },
             computed: {
                 ...mapStores(useCartStore),
                 totalPrice() {
@@ -147,7 +159,11 @@
                         alert("Your cart is empty!");
                         return;
                     }
-
+                    if (!this.form.firstname || !this.form.address) {
+                        alert("Please fill in your Name and Address.");
+                        return;
+                    }
+                    console.log("Order placed by:", this.form)
                     alert("Order accepted! Thanks for your order.");
 
                     this.cartStore.clearCart();
