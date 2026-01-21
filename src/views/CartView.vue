@@ -39,7 +39,7 @@
                         </div>
                         <div class="one-eight text-center">
                             <div class="display-tc">
-                                <input type="text" class="form-control input-number text-center" value="1" readonly>
+                                <span class="price">1</span>
                             </div>
                         </div>
                         <div class="one-eight text-center">
