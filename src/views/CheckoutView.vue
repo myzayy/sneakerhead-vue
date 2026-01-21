@@ -70,15 +70,15 @@
                                 <ul>
                                     <li>
                                         <span>Subtotal</span> 
-                                        <span>${{ totalPrice }}</span>
+                                        <span>€ {{ totalPrice }}</span>
                                     </li>
                                     <li>
                                         <span>Delivery</span> 
-                                        <span>$0.00</span>
+                                        <span>€ 0.00</span>
                                     </li>
                                     <li>
                                         <span><strong>Order Total</strong></span> 
-                                        <span><strong>${{ totalPrice }}</strong></span>
+                                        <span><strong>€ {{ totalPrice }}</strong></span>
                                     </li>
                                 </ul>
                             </div>

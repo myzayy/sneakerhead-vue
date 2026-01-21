@@ -3,10 +3,11 @@
     <div class="container">
       <div class="row">
         <div class="col-sm-8 offset-sm-2 text-center colorlib-heading">
-          <h2>About Page</h2>
-          <h3>Page created by Maksym Zaiets.</h3>
+          <h2>Contact Page</h2>
           <p>
-            <a href="https://github.com/myzayy/sneakerhead-vue" class="btn btn-primary">View on GitHub</a>
+             <a href="https://www.drmartens.com/us/en/" class="btn btn-primary">
+              Visit Official Site
+            </a>
           </p>
         </div>
       </div>
@@ -16,7 +17,7 @@
 
 <script>
 export default {
-  name: 'AboutView',
+  name: 'ContactView',
 }
 </script>
 

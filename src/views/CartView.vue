@@ -32,7 +32,7 @@
                         <div class="one-eight text-center">
                             <div class="display-tc">
                                 <span class="price">
-                                    {{ item.price }}
+                                    {{ item.price }} EUR
                                 </span>
                             </div>
 
@@ -65,7 +65,7 @@
                                         <div class="sub">
                                             </div>
                                         <div class="grand-total">
-                                            <p><span><strong>Total:</strong></span> <span>${{ totalPrice }}</span></p>
+                                            <p><span><strong>Total:</strong></span> <span>{{ totalPrice }} EUR</span></p>
                                         </div>
                 
                                         <div class="grand-total text-center">

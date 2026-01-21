@@ -18,7 +18,7 @@
                 <div class="col-sm-4">
                     <div class="product-desc">
                         <h3>{{ product.title }}</h3>
-                        <p class="price"><span>${{ product.price }}</span></p>
+                        <p class="price"><span>€ {{ product.price }}</span></p>
                         <p>{{ product.description }}</p>
                         <p>
                         <button @click="AddToCart" class="btn btn-primary btn-addtocart">

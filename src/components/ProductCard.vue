@@ -9,7 +9,7 @@
 				<h2>
                     <RouterLink :to="'/product/' + id">{{ title }}</RouterLink>
                 </h2>
-                <span class="price">{{ price }}</span>
+                <span class="price">{{ price }} EUR</span>
                 <div class="mt-2">
                     <button class="btn btn-primary btn-sm" @click="addToCartClick">
                         <i class="icon-shopping_cart"></i> Add To Cart

@@ -26,7 +26,7 @@
                             <li><RouterLink to="/category/men">Men</RouterLink></li>
                             <li><RouterLink to="/category/women">Women</RouterLink></li>
                             <li><RouterLink to="/about">About</RouterLink></li>
-                            <li><a href="#">Contact</a></li>
+                            <li><RouterLink to="/contact">Contact</RouterLink></li>
                             <li class="cart">
                                 <RouterLink to="/cart">
                                     <i>Cart [{{ cartStore.items.length }}]</i>

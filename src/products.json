@@ -4,8 +4,8 @@
     "category": "men",
     "title": "1460 Smooth Leather Boots",
     "price": 170,
-    "image": "/images/item-1.jpg",
-    "description": "some text",
+    "image": "/images/item-1.png",
+    "description": "The 1460 boot. The Original. Born 1st April 1960, and named after the date. Our unmistakable 8-eye boot started out life at the feet of workers — and soon became a cultural icon. It’s instantly recognizable by its yellow welt stitching, scripted heel loop, unique sole tread, and other distinctly DM’s features. The wide, rounded toe shape and grooved, air-cushioned sole keep you bouncing even on your longest days. And the durable Smooth leather shapes itself around you — more yours with every wear.",
     "reviews": [
       {
         "review_id": 1,
@@ -28,16 +28,16 @@
     "category": "men",
     "title": "Jadon Platform Boots",
     "price": 210,
-    "image": "/images/item-2.jpg",
-    "description": "some text"
+    "image": "/images/item-2.png",
+    "description": "Stand tall. The Jadon boot takes over 6 decades of Dr. Martens DNA and transforms it into a unique, head-turning platform silhouette. Crafted from Polished Smooth leather, you can scuff or polish it however you choose. Our distinctive grooving pattern and yellow welt stitching mark the sole, and the top of the boot is tagged with a black and yellow heel loop. Fitted with a convenient inside zip — for attitude on the move in every outfit."
   },
   {
     "id": 3,
     "category": "men",
     "title": "1461 Oxford Shoes",
     "price": 140,
-    "image": "/images/item-3.jpg",
-    "description": "some text",
+    "image": "/images/item-3.png",
+    "description": "Timeless since 1961. The 1461 shoe marched off the production line a year after our Original 1460 boot — and it’s never missed a beat. Classic and versatile, the shoe is built from Smooth leather, which looks great polished to a shine or scuffed and well-worn. Our bouncing sole is secured with distinctive yellow welt stitching, and the wide, rounded toe ensures all-day comfort — whatever you’re up to.",
     "reviews": [
       {
         "review_id": 1,
@@ -66,25 +66,25 @@
     "id": 4,
     "category": "women",
     "title": "Adrian Tassel Loafers",
-    "price": 99999,
-    "image": "/images/item-4.jpg",
-    "description": "some text"
+    "price": 160,
+    "image": "/images/item-4.png",
+    "description": "Loafers with a little more sole. We’ve reworked our classic Adrian loafer — now elevated on our Bex platform sole for extra height and attitude. Made from Smooth leather with double tassels and a kiltie fringe. The DM’s sole is signed with yellow welt stitching and our distinctive grooving."
   },
   {
     "id": 5,
-    "category": "men",
-    "title": "1460 Smooth Leather Boots",
-    "price": 170,
-    "image": "/images/item-5.jpg",
-    "description": "some text"
+    "category": "women",
+    "title": "Mary Jane Leather Shoes",
+    "price": 150,
+    "image": "/images/item-5.png",
+    "description": "Our spin on the classic Mary Jane shoe pairs the traditional silhouette with a bouncing DM’s sole and a heavy dose of attitude. Built from Smooth leather with double straps, adjustable horseshoe buckles, and brogue detailing on the vamp. Signed with our instantly recognizable yellow welt stitching."
   },
   {
     "id": 6,
-    "category": "women",
-    "title": "Jadon Platform Boots",
-    "price": 210,
-    "image": "/images/item-6.jpg",
-    "description": "some text",
+    "category": "men",
+    "title": "8053 Arc Crazy Horse Platform Shoes",
+    "price": 190,
+    "image": "/images/item-6.png",
+    "description": "Distressed leather for stress-free wear. We’ve remixed our comfortable 8053 shoe using rugged Crazy Horse leather — and it stands taller on our platform Quad sole. The shoe is stacked with details from heel to toe, including antique brass eyelets, hiker-inspired laces, contrast stitching, and a notched welt. The two-tone sole is marked with our grooving pattern and yellow welt stitching.",
     "reviews": [
       {
         "review_id": 1,
@@ -104,18 +104,18 @@
   },
   {
     "id": 7,
-    "category": "men",
-    "title": "1461 Oxford Shoes",
-    "price": 140,
-    "image": "/images/item-7.jpg",
-    "description": "some text"
+    "category": "women",
+    "title": "ZEBZAG LACELESS",
+    "price": 160,
+    "image": "/images/item-7.png",
+    "description": "Who’s got time for laces? Not you. The Zebzag Laceless Low boot makes getting out the door quick and easy. Built from silky-soft olive Tumbled Nubuck that feels good from the first wear, it’s fitted with a cushioned sock liner for all-day comfort. The hybrid air-cushioned sole keeps things light but tough enough for whatever you throw at it. Finished with a black-and-smoke sole, yellow welt stitch and a branded heel loop. Comfort with zero strings attached."
   },
   {
     "id": 8,
     "category": "women",
-    "title": "1461 Oxford Shoes",
-    "price": 140,
-    "image": "/images/item-8.jpg",
-    "description": "some text"
+    "title": "LOUIS Smooth Leather Slip On Shoes",
+    "price": 160,
+    "image": "/images/item-8.png",
+    "description": "The Louis White Stitch slip-on shoe blends effortless style with Dr. Martens heritage. Crafted from sleek black Polished Smooth leather, it features an easy-on gusset for seamless wear and contrast white stitching across the upper for a subtle design punch. Anchored on a black DMS sole with a white welt stitch, this slip-on is a versatile staple for every wardrobe."
   }
 ]
